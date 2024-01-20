@@ -1,0 +1,136 @@
+/* Small Reset */
+*::before, *::after, * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(193, 214, 255);
+}
+
+@media (max-width: 600px) {
+    .weatherApp {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container-icon {
+        height: 200px;
+        width: 200px;
+        margin-top: 10%;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    img {
+        height: auto;
+        width: 200px;
+    }
+   
+    
+    input {
+        height: 40px;
+        width: 200px;
+        border: 2px solid rgb(119, 116, 209);
+        border-radius: 10px 10px 10px 10px;
+        background-color: transparent;
+    
+    }
+    input::placeholder {
+        font-family: sans-serif;
+        color: rgb(87, 86, 86);
+        font-size: 14px;
+       
+
+    }
+    input:hover{
+        background-color: rgb(152, 186, 255);
+    }
+    button {
+        height: 40px;
+        width: 100px;
+        border: 2px solid rgb(119, 116, 209);
+        border-radius: 10px 10px 10px 10px;
+        background-color: transparent;
+        font-size: 14px;
+        color: rgb(42, 42, 42);
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    button:hover {
+        background-color: rgb(152, 186, 255);
+        
+     }
+
+  
+}
+
+@media (min-width: 600px) {
+
+    .weatherApp {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container-icon {
+        height: 250px;
+        width: 250px;
+        margin-top: 2%;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    img {
+        height: auto;
+        width: 250px;
+    }
+   
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    input {
+        height: 50px;
+        width: 400px;
+        border: 2px solid rgb(119, 116, 209);
+        border-radius: 10px 10px 10px 10px;
+        background-color: transparent;
+    
+    }
+
+    input:hover{
+        background-color: rgb(152, 186, 255);
+    }
+    input::placeholder {
+        font-family: sans-serif;
+        color: rgb(87, 86, 86);
+        font-size: 20px;
+       
+
+    }
+    button {
+        height: 50px;
+        width: 200px;
+        border: 2px solid rgb(119, 116, 209);
+        border-radius: 10px 10px 10px 10px;
+        background-color: transparent;
+        font-size: 20px;
+        color: rgb(42, 42, 42);
+    }
+    button:hover {
+       background-color: rgb(152, 186, 255);
+       
+    }
+
+    
+}
