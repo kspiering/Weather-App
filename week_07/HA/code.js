@@ -15,14 +15,21 @@ async function getData(url) {
 }
 
 function displayData(data) {
-  // Display temperature
+  // Display
+  if (document.querySelector(".display")) {
+    document.querySelector(".display").remove();
+  }
+
   const tempContainer = document.createElement("div");
   tempContainer.classList.add("display");
-  tempContainer.innerHTML = `
-  <p>Weather in ${data.name}</p>
-  <p>Temperature ${data.main.temp}C°</p>
+  const template = `
+  <p>Weather in <span id="name">${data.name}</span></p>
+  <p>Temperature <span id="temp">${data.main.temp}C°</span></p>
   <p>Feels like ${data.main.feels_like}C°</p>
   <p>Wind speed ${data.wind.speed}</p>
+  <p> Today you'll see a <span id="description">${data.weather[0].description}</span></p>
   `;
+  tempContainer.innerHTML = template;
+
   document.querySelector(".output").appendChild(tempContainer);
 }
