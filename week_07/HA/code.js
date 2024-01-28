@@ -33,3 +33,19 @@ function displayData(data) {
 
   document.querySelector(".output").appendChild(tempContainer);
 }
+
+const container = document.getElementById("container");
+const modeToggle = document.getElementById("mode-toggle");
+const sun = document.getElementById("sun");
+const moon = document.getElementById("moon");
+
+modeToggle.addEventListener("click", () => {
+  container.classList.toggle("dark-mode");
+  if (container.classList.contains("dark-mode")) {
+    sun.style.display = "inline-block";
+    moon.style.display = "none";
+  } else {
+    sun.style.display = "none";
+    moon.style.display = "inline-block";
+  }
+});

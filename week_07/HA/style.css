@@ -5,7 +5,14 @@
     padding: 0;
 }
 body {
-    background-color: rgb(193, 214, 255);
+     background-color: rgb(152, 186, 255);
+}
+
+.dark-mode {
+    background-color: rgb(49, 49, 49);
+}
+#sun {
+    display: none;
 }
 
 @media (max-width: 600px) {
@@ -34,25 +41,25 @@ body {
         width: 200px;
         border: 2px solid rgb(119, 116, 209);
         border-radius: 10px 10px 10px 10px;
-        background-color: transparent;
+        background-color: rgb(152, 186, 255);
     
     }
     input::placeholder {
         font-family: sans-serif;
-        color: rgb(87, 86, 86);
+        color: rgb(53, 53, 53);
         font-size: 14px;
        
 
     }
     input:hover{
-        background-color: rgb(152, 186, 255);
+        background-color: rgb(87, 143, 255);
     }
     button {
         height: 40px;
         width: 100px;
         border: 2px solid rgb(119, 116, 209);
         border-radius: 10px 10px 10px 10px;
-        background-color: transparent;
+        background-color: rgb(152, 186, 255);
         font-size: 14px;
         color: rgb(42, 42, 42);
     }
@@ -64,9 +71,9 @@ body {
         gap: 25px;
     }
     button:hover {
-        background-color: rgb(152, 186, 255);
-        
-     }
+        background-color: rgb(87, 143, 255);
+    }
+
 .output {
     display: flex;
     flex-direction: column;
@@ -89,6 +96,13 @@ body {
     flex-direction: column;
     align-items: center;
    }
+   .mode-toggle img {
+    height: 40px;
+    width: auto;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+}
 }
 
 @media (min-width: 600px) {
@@ -124,31 +138,30 @@ body {
         width: 400px;
         border: 2px solid rgb(119, 116, 209);
         border-radius: 10px 10px 10px 10px;
-        background-color: transparent;
+        background-color: rgb(152, 186, 255);
     
     }
 
     input:hover{
-        background-color: rgb(152, 186, 255);
+        background-color: rgb(87, 143, 255);
     }
     input::placeholder {
         font-family: sans-serif;
-        color: rgb(87, 86, 86);
+        color: rgb(53, 53, 53);
         font-size: 20px;
-       
-
     }
+
     button {
         height: 50px;
         width: 200px;
         border: 2px solid rgb(119, 116, 209);
         border-radius: 10px 10px 10px 10px;
-        background-color: transparent;
+        background-color: rgb(152, 186, 255);
         font-size: 20px;
         color: rgb(42, 42, 42);
     }
     button:hover {
-       background-color: rgb(152, 186, 255);
+       background-color: rgb(87, 143, 255);
     }
 
     .output {
@@ -177,4 +190,13 @@ body {
     flex-direction: column;
     align-items: center;
    }
+
+.mode-toggle img {
+    height: 40px;
+    width: auto;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+}
+
 }
