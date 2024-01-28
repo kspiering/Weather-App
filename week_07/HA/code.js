@@ -23,11 +23,11 @@ function displayData(data) {
   const tempContainer = document.createElement("div");
   tempContainer.classList.add("display");
   const template = `
-  <p>Weather in <span id="name">${data.name}</span></p>
+  <p>Todays weather in <span id="name">${data.name}</span></p>
   <p>Temperature <span id="temp">${data.main.temp}C°</span></p>
   <p>Feels like ${data.main.feels_like}C°</p>
-  <p>Wind speed ${data.wind.speed}</p>
-  <p> Today you'll see a <span id="description">${data.weather[0].description}</span></p>
+  <p>Wind speed ${data.wind.speed} km/h</p>
+  <p> Weather: <span id="description">${data.weather[0].description}</span></p>
   `;
   tempContainer.innerHTML = template;
 

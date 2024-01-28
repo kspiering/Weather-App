@@ -10,6 +10,7 @@ body {
 
 .dark-mode {
     background-color: rgb(49, 49, 49);
+    color: white;
 }
 #sun {
     display: none;
@@ -78,6 +79,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 10rem;
 }
 
   p {
@@ -168,6 +170,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 8rem;
     }
     
       p {
